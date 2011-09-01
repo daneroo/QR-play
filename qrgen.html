@@ -1,0 +1,17 @@
+<html>
+    <script>
+    var r=Math.random;
+    var u="http://chart.apis.google.com/chart?cht=qr&chs=400&chld=H&chl=";
+    setInterval(function(){
+        s='';//'http%3A%2F%2Fm.catou.com/';
+        for (i=0;i<500;i++) s+=Math.round(r()*1000000)%2;
+        //for (i=0;i<250;i++) s+=Math.round(r()*1000000)%2;
+        //for (i=0;i<2000-250;i++) s+='1';
+        document.images[0].src=u+s;
+        //console.log('len: ',s.length);
+    },200);
+    </script>
+    <body>
+        <img width="600" src="" />
+    </body>
+</html>
